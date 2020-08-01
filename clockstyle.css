@@ -19,4 +19,9 @@ body {
 .box {
     background-color: white;
     border-radius: 25px;
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+    border: 1px solid white;
+    text-align: center;
 }
