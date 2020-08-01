@@ -7,7 +7,7 @@
 
 
 
-function getDateTime() {
+function getTime() {
         var now     = new Date(); 
         var hour    = now.getHours();
         var minute  = now.getMinutes();
@@ -27,6 +27,6 @@ function getDateTime() {
 
 // real time
     setInterval(function(){
-        currentTime = getDateTime();
+        currentTime = getTime();
         document.getElementById("digital-clock").innerHTML = currentTime;
     }, 1000);
