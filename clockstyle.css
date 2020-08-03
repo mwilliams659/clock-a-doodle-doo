@@ -1,18 +1,27 @@
-/*Selector {
-	Property:value;
-}*/
+/* Selector {
+	Property: value;
+} */
 
 body {
-	color: pink;
+	color: #C24D4D;
     font-family: Verdana;
     font-size: 5em;
-    text-align: center;
+    background-color: #C24D4D;
 }
 
-.centered {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -50px;
-    margin-left: -100px;
-  }
+.container {
+    min-height: 100vh;
+    display: flex;
+        justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: white;
+    border-radius: 25px;
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+    border: 1px solid white;
+    text-align: center;
+}
