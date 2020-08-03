@@ -1,12 +1,3 @@
-// var today = new Date();
-
-// var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-
-
-//   new Date().toLocaleTimeString();
-
-
-
 function getTime() {
         var now     = new Date(); 
         var hour    = now.getHours();
@@ -29,4 +20,4 @@ function getTime() {
     setInterval(function(){
         currentTime = getTime();
         document.getElementById("digital-clock").innerHTML = currentTime;
-    }, 1000);
+    }, 0);
