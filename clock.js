@@ -16,7 +16,7 @@ function getTime() {
          return dateTime;
     }
 
-// real time
+// real time 
 var currentTime = getTime()
 setInterval(function(){
 currentTime = getTime();
