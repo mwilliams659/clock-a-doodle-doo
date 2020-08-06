@@ -30,8 +30,11 @@ var timesList = ['00:00', '01:01', '01:10', '01:11', '01:23', '02:02', '02:20', 
 setInterval(function(){
     if (timesList.includes(currentTime)) {
         document.getElementById("background").className = "wowTime";
+        document.getElementById("audio1").play();
         }
     else {
         document.getElementById("background").className = "regularTime";
     }
 }, 100);
+
+
