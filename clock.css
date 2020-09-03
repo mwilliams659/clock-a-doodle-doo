@@ -11,7 +11,7 @@ body {
 .container {
     min-height: 100vh;
     display: flex;
-        justify-content: center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -33,7 +33,12 @@ body {
     background: linear-gradient(214deg, rgba(230,106,106,1) 35%, rgba(255,255,255,1) 80%);
 }
 
-body {
-    animation: bounce; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; 
+.funAnime {
+    animation: swing, flash;
+    animation-iteration-count: 6;
+}
+
+.noneAnime {
+    animation: zoomIn;
+    animation-iteration-count: 1;
 }
