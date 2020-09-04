@@ -13,6 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .box {
@@ -49,3 +50,61 @@ body {
     animation-iteration-count: 1;
 }
 
+
+.snoop {
+    z-index: -1;
+}
+
+.smoke {
+    z-index: 1;
+    width: 500px ;
+    height: 450px ;
+}
+
+
+/* .snoop {
+    animation: rollIn;
+    animation-iteration-count: 1;
+    position: relative;
+} */
+
+/* disables text select */
+.disable-select {
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+/* @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+ .snoop {  
+    /* This section calls the slideInFromLeft animation we defined above */
+    /* animation: 1s ease-out 0s 1 slideInFromLeft;
+    }
+ */ */
+
+/* div.snoop
+    {
+      float:left;
+      z-index:999;
+      width:100px;
+      height:100px;
+      background:red;
+      transition:width 2s;
+      -webkit-transition:width 2s; /* Safari */
+    /* } */
+    
+    /* div.snoop:hover
+    {
+      z-index:999;
+      width:300px;
+    } */ */
