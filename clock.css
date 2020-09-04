@@ -3,7 +3,7 @@
 } */
 
 body {
-	color: #C24D4D;
+	color: black;
     font-family: Verdana;
     font-size: 5em;
 }
@@ -21,9 +21,15 @@ body {
     width: 300px;
     height: 100px;
     padding: 50px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     text-align: center;
 }
+
+.box:hover {
+    background-color: rgb(223, 223, 221);
+    cursor: pointer;
+    cursor: hand;
+  }
 
 .regularTime {
     background-color: #C24D4D;
@@ -42,3 +48,4 @@ body {
     animation: zoomIn;
     animation-iteration-count: 1;
 }
+

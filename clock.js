@@ -29,16 +29,16 @@ var timesList = ['00:00', '01:01', '01:10', '01:11', '01:23', '02:02', '02:20', 
 
 setInterval(function(){
     if (timesList.includes(currentTime)) {
-        document.getElementById("background").className = "wowTime";
+        document.getElementById("inTheBack").className = "wowTime";
         document.getElementById("animate-this").className = "container funAnime animated";
         var now     = new Date(); 
-        var second  = now.getSeconds(); 
+        var second  = now.getSeconds();
         if (second === 0) {
             document.getElementById("audio1").play();
         }
     }
     else {
-        document.getElementById("background").className = "regularTime";
+        document.getElementById("inTheBack").className = "regularTime";
         document.getElementById("animate-this").className = "container noneAnime animated";
 
         
@@ -46,3 +46,15 @@ setInterval(function(){
 }, 100);
 
 
+
+
+// changes the colour of the box to a random colour when clicked
+var boxButton = document.querySelector('.box');
+
+boxButton.onclick = function () {
+ var red = Math.floor(Math.random() * 256);
+ var blue = Math.floor(Math.random() * 256);
+ var green = Math.floor(Math.random() * 256);
+
+ this.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
+};

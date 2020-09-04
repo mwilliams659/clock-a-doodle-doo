@@ -3,13 +3,16 @@
     <head>
         <title>What time is it?</title>
         <link rel="stylesheet" type="text/css" href="clock.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
         <audio id="audio1" src="alarm.mp3"></audio>
-    </head>
-<body id="background" class="regularTime">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        </head>
+<body id="inTheBack" class="regularTime">
     <div id="animate-this" class="container noneAnime animated">
-        <div id="digital-clock" class="box"></div>
+        <div style="user-select:none" id="digital-clock" class="box"></div>
     </div>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
 </body>
 <script src="clock.js"></script>
 </html>
