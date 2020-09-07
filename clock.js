@@ -24,27 +24,29 @@ document.getElementById("digital-clock").innerHTML = currentTime;
 }, 100);
 
 
-var timesList = ['14:53', '00:00', '01:01', '01:10', '01:"11"', '01:23', '02:02', '02:20', '02:22', '03:00', '03:03', '03:33', '04:04', '04:20', '05:05', '05:55', '06:00', '06:06', '07:07', '08:08', '08:50', '09:00', '09:09', '10:10', '11:11', '12:00', '12:12', '12:21', '12:34', '13:13', '13:57', '14:14', '15:00', '15:15', '16:16', '16:20', '17:17', '18:00', '18:18', '19:19', '20:20', '21:00', '21:21', '22:22', '23:23', '23:45'];
-
+var timesList = ['00:00', '01:01', '01:10', '01:11', '01:23', '02:02', '02:20', '02:22', '03:00', '03:03', '03:33', '04:04', '04:20', '05:05', '05:55', '06:00', '06:06', '07:07', '08:08', '08:50', '09:00', '09:09', '10:10', '11:11', '12:00', '12:12', '12:21', '12:34', '13:13', '13:57', '14:14', '15:00', '15:15', '16:16', '16:20', '17:17', '18:00', '18:18', '19:19', '20:20', '21:00', '21:21', '22:22', '23:23', '23:45'];
+var snoopList = ['04:20', '16:20'];
 // Checks time to change elements
 setInterval(function(){
     if (timesList.includes(currentTime)) {
         document.getElementById("inTheBack").className = "wowTime";
         document.getElementById("animate-this").className = "container funAnime animated";
-        document.getElementById("snoopDogg").style.display = "block";
-        document.getElementById("smokeDogg").style.display = "block";
         var now     = new Date(); 
         var second  = now.getSeconds();
         if (second === 0) {
             // this is when the audio gets played
-            if (timesList.includes('04:20', '16:20', '14:53')) {
+            if (snoopList.includes(currentTime)) {
                 document.getElementById("audio2").play();
+                // this is when snoop dogg comes on (i.e it's 04:20/16:20)
+                document.getElementById("snoopDogg").style.display = "block";
+                document.getElementById("smokeDogg").style.display = "block";
             } else {
             document.getElementById("audio1").play();
             }
         }
     }
     else {
+        // this is when there is not a significant time
         document.getElementById("inTheBack").className = "regularTime";
         document.getElementById("animate-this").className = "container noneAnime animated";
         document.getElementById("snoopDogg").style.display = "none";
@@ -70,3 +72,26 @@ boxButton.onclick = function () {
  this.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
 };
 
+
+
+// background generator
+
+var css = document.querySelector("h3");
+var color1 = document.querySelector(".color1");
+var color2 = document.querySelector(".color2");
+var body = document.getElementById("inTheBack");
+
+function setGradient() {
+	body.style.background = 
+	"linear-gradient(to right, " 
+	+ color1.value 
+	+ ", " 
+	+ color2.value 
+	+ ")";
+
+	css.textContent = body.style.background + ";";
+}
+
+color1.addEventListener("input", setGradient);
+
+color2.addEventListener("input", setGradient);
