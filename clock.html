@@ -3,11 +3,29 @@
     <head>
         <title>What time is it?</title>
         <link rel="stylesheet" type="text/css" href="clock.css">
+        <audio id="audio1" src="alarm.mp3"></audio>
+        <audio id="audio2" src="alarm2.mp3"></audio>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     </head>
-<body id="background" class="regularTime">
-    <div class="container">
-        <div id="digital-clock" class="box"></div>
-    </div>
-</body>
+    <body id="inTheBack" class="regularTime">
+        <div id="topPage" class=containerTop>
+
+        </div>
+        <div id="animate-this" class="container noneAnime animated">
+            <div class="child">
+                
+                <img id="snoopDogg" class="snoop" src="snoop.gif.gif" style="display:none"/>
+                <div style="user-select:none" id="digital-clock" class="box"></div>
+                <img id="smokeDogg" class="smoke" src="smoke1.gif" style="display:none"/>
+            </div>
+        </div>
+        <div id="background-gradient" class="containerBottom">
+            <div class="child">
+            
+            <input class="color1" type="color" name="color1" value="#00ff00">
+            <input class="color2" type="color" name="color2" value="#ff0000">
+            </div>
+        </div>
+    </body>
 <script src="clock.js"></script>
 </html>
