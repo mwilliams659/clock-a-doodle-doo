@@ -29,7 +29,7 @@ var snoopList = ['04:20', '16:20'];
 // Checks time to change elements
 setInterval(function(){
     if (timesList.includes(currentTime)) {
-        document.getElementById("inTheBack").className = "wowTime";
+        // document.getElementById("inTheBack").className = "wowTime";
         document.getElementById("animate-this").className = "container funAnime animated";
         var now     = new Date(); 
         var second  = now.getSeconds();
@@ -42,6 +42,8 @@ setInterval(function(){
                 document.getElementById("smokeDogg").style.display = "block";
             } else {
             document.getElementById("audio1").play();
+            document.getElementById("missionPassed").style.display = "block";
+            document.getElementById("catDogg").style.display = "block";
             }
         }
     }
@@ -74,7 +76,7 @@ boxButton.onclick = function () {
 
 
 
-// background generator
+// background gradient generator
 
 var css = document.querySelector("h3");
 var color1 = document.querySelector(".color1");
