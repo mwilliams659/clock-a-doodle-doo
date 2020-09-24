@@ -53,6 +53,8 @@ setInterval(function(){
         document.getElementById("animate-this").className = "container noneAnime animated";
         document.getElementById("snoopDogg").style.display = "none";
         document.getElementById("smokeDogg").style.display = "none";
+        document.getElementById("catDogg").style.display = "none";
+        document.getElementById("missionPassed").style.display = "none";
 
         
     }
