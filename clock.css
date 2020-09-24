@@ -16,7 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 70%
+    height: 80%
 }
 
 .containerTop {
@@ -27,7 +27,7 @@ body {
 
 .containerBottom {
     position: relative;
-    height: 100%;
+    min-height: 1vh;
     /* width: auto;
     margin-right: auto;
     margin-left: auto; */
@@ -62,12 +62,12 @@ body {
     background-color: #C24D4D;
 }
 
-.wowTime {
+/* .wowTime {
     background: linear-gradient(214deg, rgba(230,106,106,1) 35%, rgba(255,255,255,1) 80%);
-}
+} */
 
 .funAnime {
-    animation: swing, flash;
+    animation: shakeX, flash;
     animation-iteration-count: 6;
 }
 
@@ -86,7 +86,6 @@ body {
     width: 500px ;
     height: 450px ;
 }
-
 
 /* disables text select */
 .disable-select {
