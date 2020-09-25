@@ -87,6 +87,7 @@ body {
     height: 450px ;
 }
 
+
 /* disables text select */
 .disable-select {
     user-select: none; /* supported by Chrome and Opera */
