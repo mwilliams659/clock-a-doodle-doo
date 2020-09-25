@@ -39,9 +39,9 @@ body {
     align-items: center;
 }
 
-.color1 {
+/* .color1 {
     /* align-items: baseline; */
-}
+/* } */ 
 
 .box {
     background-color: white;
@@ -50,6 +50,11 @@ body {
     height: 100px;
     padding: 50px;
     text-align: center;
+}
+
+.child:hover {
+    cursor: pointer;
+    cursor: hand;
 }
 
 .box:hover {
