@@ -40,7 +40,6 @@ var snoopList = ['04:20', '16:20'];
 // Checks time to change elements
 setInterval(function(){
     if (timesList.includes(currentTime)) {
-        // document.getElementById("inTheBack").className = "wowTime";
         document.getElementById("animate-this").className = "container funAnime animated";
         var now     = new Date(); 
         var second  = now.getSeconds();
@@ -48,11 +47,14 @@ setInterval(function(){
             // this is when the audio gets played
             if (snoopList.includes(currentTime)) {
                 document.getElementById("audio2").play();
+                document.getElementById("inTheBack").className = "snoopTime";
                 // this is when snoop dogg comes on (i.e it's 04:20/16:20)
                 document.getElementById("snoopDogg").style.display = "block";
                 document.getElementById("smokeDogg").style.display = "block";
+            // This is when the audio, gifs and background gets triggered
             } else {
             document.getElementById("audio1").play();
+            document.getElementById("inTheBack").className = "wowTime";
             document.getElementById("missionPassed").style.display = "block";
             document.getElementById("catDogg").style.display = "block";
             }

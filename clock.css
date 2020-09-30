@@ -72,9 +72,13 @@ input {
     background: linear-gradient(to right, rgb(221, 96, 230), rgb(255, 131, 36));
 }
 
-/* .wowTime {
-    background: linear-gradient(214deg, rgba(230,106,106,1) 35%, rgba(255,255,255,1) 80%);
-} */
+.wowTime {
+    background: linear-gradient(to right, rgb(240, 26, 255), rgb(123, 36, 255));
+}
+
+.snoopTime {
+    background: linear-gradient(to right, rgb(255, 26, 26), rgb(21, 157, 49));
+}
 
 .funAnime {
     animation: shakeX, flash;
