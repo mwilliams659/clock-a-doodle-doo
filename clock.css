@@ -33,6 +33,11 @@ body {
     margin-left: auto; */
 }
 
+input {
+    cursor: pointer;
+}
+
+
 .child {
     display: flex;
     justify-content: center;
@@ -64,7 +69,7 @@ body {
   }
 
 .regularTime {
-    background-color: #C24D4D;
+    background: linear-gradient(to right, rgb(221, 96, 230), rgb(255, 131, 36));
 }
 
 /* .wowTime {
