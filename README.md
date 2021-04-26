@@ -7,5 +7,5 @@ The times that trigger the change are as follows:
 I have used HTML, CSS and JavaScript to create this project.
 
 ## Get started
-Clone repo.  
+Clone the repo onto your machine.  
 Load the HTML file in your chosen browser.
