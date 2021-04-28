@@ -11,12 +11,12 @@ body {
 }
 
 .container {
-    min-height: 90vh;
+    min-height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 80%
+    margin-bottom: 0;
 }
 
 .containerTop {
@@ -28,9 +28,6 @@ body {
 .containerBottom {
     position: relative;
     min-height: 1vh;
-    /* width: auto;
-    margin-right: auto;
-    margin-left: auto; */
 }
 
 input {
@@ -42,6 +39,10 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+
 }
 
 /* .color1 {
@@ -57,7 +58,7 @@ input {
     text-align: center;
 }
 
-.child:hover {
+input:hover {
     cursor: pointer;
     cursor: hand;
 }
@@ -109,4 +110,15 @@ input {
    -khtml-user-select: none; /* Konqueror HTML */
    -moz-user-select: none; /* Firefox */
    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+
+.time-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    float: right;
 }

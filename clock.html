@@ -10,15 +10,9 @@
         <link rel="icon" href="favicon.png">
     </head>
     <body id="inTheBack" class="regularTime">
-        <div id="topPage" class=containerTop></div>
-        <div id="animate-this" class="container noneAnime animated">
-            <div class="child" id="main">
-                <img id="missionPassed" class="gta" src="mission.gif" style="display:none"/>
-                <img id="snoopDogg" class="snoop" src="snoop.gif.gif" style="display:none"/>
-                <div style="user-select:none" id="digital-clock" class="box" title="Change Clock Colour!"></div>
-                <img id="catDogg" class="cat" src="cat.gif" style="display:none"/>
-                <img id="smokeDogg" class="smoke" src="smoke1.gif" style="display:none"/>
-            </div>
+        <div class="time-container">
+            <input type="time" id="timeSelector" placeholder="Select a time:">
+            <button id="btn">Add</button>
         </div>
         <div id="background-gradient" class="containerBottom">
             <div class="child">
@@ -26,6 +20,19 @@
             <input class="color2" type="color" name="color2" value="#ff8324" title="Change Background Colour!">
             </div>
         </div>
+        <div id="topPage" class=containerTop></div>
+        <div id="animate-this" class="container noneAnime animated">
+            <div class="child" id="main">
+                <img id="missionPassed" class="gta" src="mission.gif" style="display:none"/>
+                <img id="snoopDogg" class="snoop" src="snoop.gif" style="display:none"/>
+                <div style="user-select:none" id="digital-clock" class="box" title="Change Clock Colour!"></div>
+                <img id="catDogg" class="cat" src="cat.gif" style="display:none"/>
+                <img id="smokeDogg" class="smoke" src="smoke1.gif" style="display:none"/>
+            </div>
+        </div>
+
+
+
     </body>
 <script src="clock.js"></script>
 </html>
